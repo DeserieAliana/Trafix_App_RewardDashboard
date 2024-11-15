@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trafix - Rewards Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: 50px auto;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .header h1 {
+            font-size: 36px;
+            color: #333;
+        }
+        .card {
+            background-color: #f4f4f4;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .card h3 {
+            margin: 0 0 10px;
+            color: #333;
+        }
+        .points-section,
+        .redeemable-items {
+            margin-bottom: 30px;
+        }
+        .points-overview,
+        .redeemable-items-list {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 20px;
+        }
+        .points-overview div,
+        .redeemable-items-list div {
+            background-color: #333;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            color: #fff;
+        }
+        .redeemable-items-list div {
+            cursor: pointer;
+        }
+        .redeemable-items-list div:hover {
+            background-color: #555;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 14px;
+            color: #333;
+        }
+        .table-container {
+            background-color: #222;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        .table-container table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .table-container table, .table-container th, .table-container td {
+            border: 1px solid #444;
+        }
+        .table-container th, .table-container td {
+            padding: 10px;
+            text-align: center;
+        }
+        .table-container th {
+            background-color: #333;
+            color: #fff;
+        }
+        .table-container tr:nth-child(even) {
+            background-color: #444;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <h1>Rewards Dashboard</h1>
+    </div>
+
+    <div class="card points-section">
+        <h3>Points Overview</h3>
+        <div class="points-overview">
+            <div>
+                <h4>Traveling</h4>
+                <p>1 km = 1 point</p>
+            </div>
+            <div>
+                <h4>Gift Cards</h4>
+                <p>50 points when redeeming gift cards</p>
+            </div>
+            <div>
+                <h4>Daily Login</h4>
+                <p>0.5 points per day</p>
+            </div>
+            <div>
+                <h4>Welcome Reward</h4>
+                <p>10 points (one-time)</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="card redeemable-items">
+        <h3>Redeemable Items</h3>
+        <div class="redeemable-items-list">
+            <div>
+                <h4>Discount Voucher</h4>
+                <p>50 points</p>
+            </div>
+            <div>
+                <h4>Gift Card</h4>
+                <p>100 points</p>
+            </div>
+            <div>
+                <h4>Coupon</h4>
+                <p>30 points</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>© Trafix 2024</p>
+    </div>
+</div>
+
+</body>
+</html>
